@@ -18,5 +18,5 @@ struct CircleImage: View {
 }
 
 #Preview {
-//    CircleImage(image: <#T##Image#>("jungle"))
+    CircleImage(image: Image("icybay"))
 }
