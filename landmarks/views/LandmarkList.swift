@@ -1,10 +1,3 @@
-//
-//  LandmarkList.swift
-//  landmarks
-//
-//  Created by Daniel on 27/08/25.
-//
-
 import SwiftUI
 
 struct LandmarkList: View {
@@ -16,7 +9,6 @@ struct LandmarkList: View {
                 } label: {
                     LandmarkRow(landmark: landmark)
                 }
-                
             }
             .navigationTitle("Landmarks")
         } detail: {
