@@ -1,10 +1,3 @@
-//
-//  MapView.swift
-//  landmarks
-//
-//  Created by Daniel on 24/08/25.
-//
-
 import SwiftUI
 import MapKit
 

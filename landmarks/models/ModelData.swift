@@ -1,10 +1,3 @@
-//
-//  ModelData.swift
-//  landmarks
-//
-//  Created by Daniel on 25/08/25.
-//
-
 import Foundation
 
 var landmarks: [Landmark] = load("landmarkData.json")

@@ -1,9 +1,3 @@
-//
-//  LandmarkDetail.swift
-//  landmarks
-//
-//  Created by Daniel on 31/08/25.
-//
 
 import SwiftUI
 
