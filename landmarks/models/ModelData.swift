@@ -1,10 +1,12 @@
 import Foundation
 
+// This is a macro
 @Observable
 class ModelData {
     var landmarks: [Landmark] = load("landmarkData.json")
 }
 
+// The
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 

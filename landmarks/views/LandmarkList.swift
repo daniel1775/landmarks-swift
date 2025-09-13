@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    // ModelData.self is the way to get the type of the ModelData class
     @Environment(ModelData.self) var modelData;
     @State private var showFavoritesOnly = false;
     
