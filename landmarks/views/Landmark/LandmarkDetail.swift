@@ -4,9 +4,16 @@ import SwiftUI
 struct LandmarkDetail: View {
     @Environment(ModelData.self) var modelData
     
+    var landmarkIndex: Int {
+        // $0 is a shotshand who refer to first argument of a closure
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
+    
     var landmark: Landmark
     
     var body: some View {
+        @Bindable var modelData = modelData;
+        
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
@@ -18,8 +25,8 @@ struct LandmarkDetail: View {
                     Text(landmark.name)
                         .font(.title)
                         .foregroundColor(Color.black)
-                    // FavoriteButton()
-
+                    // By using $ it pass to reference to modelData, so the child is allowed to change its value
+                    FavoriteButton(isFavorite: $modelData.landmarks[landmarkIndex].isFavorite)
                 }
                 HStack() {
                     Text(landmark.park)
